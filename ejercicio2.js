@@ -1,6 +1,6 @@
 const createPhoneNumber=(Number)=>{
     if(Number.length !== 10){
-        return "El numero introducido tiene mas de 10 digitos" 
+        return "El numero no contiene la cantidad de digitos correspondientes" 
     }
     const number=Number.slice()
     const number2=number.splice(0,0,"(")
@@ -11,3 +11,5 @@ const createPhoneNumber=(Number)=>{
     return unir
 }
 console.log(createPhoneNumber([3,1,8,7,2,2,0,6,8,2]))
+console.log(createPhoneNumber([3,1,8,7,2,2,0,6,2]))
+console.log(createPhoneNumber([3,1,8,7,2,2,0,6,8,2,8]))
