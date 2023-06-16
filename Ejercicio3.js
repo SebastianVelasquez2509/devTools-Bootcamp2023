@@ -1,11 +1,21 @@
-const countNamesRepetitions = (names) => {
+function countNameRepetitions(names) {
+    const result = {};
     for (let i = 0; i < names.length; i++) {
-    const element = names[i];
-    console.log(element);
+    const name = names[i];
+        if (result[name]) 
+            {
+            result[name] += '*';
+            } 
+    else 
+        {
+            result[name] = '*'
+        }
     }
+    return result;
 }
-let result= {}
 
-//const resultado=countNamesRepetions(['Juan','María','Pedro','Juan','María','María'])
-//console.log(resultado);
+const names = ['Sebastian', 'María', 'Pedro','Pedro', 'Juan', 'María', 'María','Jose'];
+const resultado = countNameRepetitions(names);
+console.log(resultado);
+
 
