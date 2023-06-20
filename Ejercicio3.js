@@ -14,7 +14,6 @@ function countNameRepetitions(names) {
     return result;
 }
 
-
 const names = ['Sebastian', 'María', 'Pedro','Pedro', 'Juan', 'María', 'María',];
 const resultado = countNameRepetitions(names);
 console.log(resultado);
